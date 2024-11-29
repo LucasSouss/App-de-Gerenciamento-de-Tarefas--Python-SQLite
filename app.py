@@ -1,7 +1,7 @@
 import flet as ft
 import sqlite3
 
-class ToDo:
+class MyTasks:
     def __init__(self, page: ft.Page):
         self.page = page
         self.page.bgcolor = ft.colors.WHITE
@@ -114,4 +114,4 @@ class ToDo:
 
         self.page.add(input_bar, tabs,tks)
 
-ft.app(target = ToDo)
+ft.app(target = MyTasks)
